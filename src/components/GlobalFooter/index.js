@@ -9,6 +9,7 @@ const GlobalFooter = ({ className, links, copyright }) => {
       {links && (
         <div className={styles.links}>
           {links.map(link => (
+            // eslint-disable-next-line react/jsx-no-target-blank
             <a
               key={link.key}
               title={link.key}
